@@ -12,4 +12,6 @@
         'security/ir.model.access.csv',
         'views/import_bom_views.xml',
     ]
+    'external_dependencies': {'openpyxl',
+    },
 }
