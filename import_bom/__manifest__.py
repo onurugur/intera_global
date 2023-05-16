@@ -2,11 +2,11 @@
 
 {
     'name' : 'Import Bom from Excel',
-    'category' : 'Onur',
+    'category' : 'base',
     'depends' : ['mrp','product'],
-    'author': 'Codequarters',
+    'author': 'Onur',
     'license':'LGPL-3',
-    'website': 'http://www.onur.com',
+    'website': '',
     'description': """ Import Bom from Excel """,
     'data': [
         'security/ir.model.access.csv',
