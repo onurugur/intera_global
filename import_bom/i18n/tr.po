@@ -1,0 +1,149 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* import_bom
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 15.0+e-20211122\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2022-01-25 06:47+0000\n"
+"PO-Revision-Date: 2022-01-25 06:47+0000\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: import_bom
+#: code:addons/import_bom/models/mrp_bom.py:0
+#, python-format
+msgid "%s is not in products"
+msgstr "%s ürünü oluşturulmamış."
+
+#. module: import_bom
+#: model_terms:ir.ui.view,arch_db:import_bom.view_bom_import
+msgid ""
+"<span>Excel'imizi xlsx formatında olması gerekmektedir.</span><br/>\n"
+"            \t\t<strong>Örnek Tablomuz</strong><br/>"
+msgstr ""
+"<span>Excel'imizi xlsx formatında olması gerekmektedir.</span><br/>\n"
+"            \t\t<strong>Örnek Tablomuz</strong><br/>"
+
+#. module: import_bom
+#: model_terms:ir.ui.view,arch_db:import_bom.view_bom_import
+msgid ""
+"<strong>Eğer ürüne tüketileceği operasyonu tanımlamak istiyorsanız rotasını öncesinde tanımlayınız.</strong><br/>\n"
+"            \t\t<strong>Operasyonlar rotanın altındaki operasyon alanındaki gibi yazılmalıdır Örnek:Mekanik Montaj gibi.</strong><br/>  \n"
+"            \t\t<strong>Ürün ve miktar zorunlu alanlardır</strong>"
+msgstr ""
+"<strong>Eğer ürüne tüketileceği operasyonu tanımlamak istiyorsanız rotasını öncesinde tanımlayınız.</strong><br/>\n"
+"            \t\t<strong>Operasyonlar rotanın altındaki operasyon alanındaki gibi yazılmalıdır Örnek:Mekanik Montaj gibi.</strong><br/>  \n"
+"            \t\t<strong>Ürün ve miktar zorunlu alanlardır</strong>"
+
+#. module: import_bom
+#: model_terms:ir.ui.view,arch_db:import_bom.view_bom_import
+msgid "ARMS ürün adı"
+msgstr "ARMS ürün adı"
+
+#. module: import_bom
+#: model_terms:ir.ui.view,arch_db:import_bom.view_bom_import
+msgid "Accept"
+msgstr "Kabul et"
+
+#. module: import_bom
+#: model_terms:ir.ui.view,arch_db:import_bom.view_bom_import
+msgid "Cancel"
+msgstr "İptal"
+
+#. module: import_bom
+#: model_terms:ir.ui.view,arch_db:import_bom.view_bom_import
+msgid "Close"
+msgstr "Kapat"
+
+#. module: import_bom
+#: model:ir.model.fields,field_description:import_bom.field_wizard_import_bom__create_uid
+msgid "Created by"
+msgstr "Oluşturan"
+
+#. module: import_bom
+#: model:ir.model.fields,field_description:import_bom.field_wizard_import_bom__create_date
+msgid "Created on"
+msgstr "Oluşturulma"
+
+#. module: import_bom
+#: model:ir.model.fields,field_description:import_bom.field_wizard_import_bom__delete_old_values
+msgid "Delete old Values"
+msgstr "Eski verileri sil"
+
+#. module: import_bom
+#: model:ir.model.fields,field_description:import_bom.field_wizard_import_bom__display_name
+msgid "Display Name"
+msgstr "Görünüm Adı"
+
+#. module: import_bom
+#: model_terms:ir.ui.view,arch_db:import_bom.view_bom_import
+msgid "Elektromekanik Montaj"
+msgstr "Elektromekanik Montaj"
+
+#. module: import_bom
+#: model:ir.model.fields,field_description:import_bom.field_wizard_import_bom__name
+msgid "File"
+msgstr "Dosya"
+
+#. module: import_bom
+#: model:ir.model.fields,field_description:import_bom.field_wizard_import_bom__id
+msgid "ID"
+msgstr "ID"
+
+#. module: import_bom
+#: model:ir.actions.act_window,name:import_bom.action_import_bom
+#: model:ir.model,name:import_bom.model_wizard_import_bom
+#: model_terms:ir.ui.view,arch_db:import_bom.view_bom_import
+msgid "Import Bom Lines"
+msgstr "Bom Satırlarını Ekle"
+
+#. module: import_bom
+#: model:ir.model.fields,field_description:import_bom.field_wizard_import_bom____last_update
+msgid "Last Modified on"
+msgstr "Son Güncelleme"
+
+#. module: import_bom
+#: model:ir.model.fields,field_description:import_bom.field_wizard_import_bom__write_uid
+msgid "Last Updated by"
+msgstr "Son Güncelleyen"
+
+#. module: import_bom
+#: model:ir.model.fields,field_description:import_bom.field_wizard_import_bom__write_date
+msgid "Last Updated on"
+msgstr "Son Güncelleme"
+
+#. module: import_bom
+#: model_terms:ir.ui.view,arch_db:import_bom.view_bom_import
+msgid "Mekanik Montaj"
+msgstr "Mekanik Montaj"
+
+#. module: import_bom
+#: model:ir.model.fields,field_description:import_bom.field_wizard_import_bom__msg
+msgid "Messages"
+msgstr "Mesajlar "
+
+#. module: import_bom
+#: model_terms:ir.ui.view,arch_db:import_bom.view_bom_import
+msgid "Miktar"
+msgstr "Miktar"
+
+#. module: import_bom
+#: model_terms:ir.ui.view,arch_db:import_bom.view_bom_import
+msgid "Operasyon"
+msgstr "Operasyon"
+
+#. module: import_bom
+#: model_terms:ir.ui.view,arch_db:import_bom.view_bom_import
+msgid "RHT-00100-00"
+msgstr "RHT-00100-00"
+
+#. module: import_bom
+#: model_terms:ir.ui.view,arch_db:import_bom.view_bom_import
+msgid "RHT-00102-00"
+msgstr "RHT-00102-00"

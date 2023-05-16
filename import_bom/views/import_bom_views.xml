@@ -1,0 +1,69 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<odoo>
+
+    <record id="view_bom_import" model="ir.ui.view">
+        <field name="name">Import Bom Lines</field>
+        <field name="model">wizard.import.bom</field>
+        <field name="arch" type="xml">
+            <form string="Import Bom Lines">
+            	<div>
+            		<span>Excel'imizi xlsx formatında olması gerekmektedir.</span><br/>
+            		<strong>Örnek Tablomuz</strong><br/>
+            		<div class="col-xs-12 col-md-6 col-lg-6">
+            		<table class="table table-bordered">
+            			<tr>
+            				<td>ürün adı</td>
+            				<td>Miktar</td>
+            				<td>Operasyon</td>
+            			</tr>
+            			<tr>
+            			<td>
+            				Deneme
+            			</td>
+            			<td>
+            			1</td>
+            			<td>
+            				Mekanik Montaj
+            			</td></tr>
+            			<tr>
+            			<td>
+            				RHT-00102-00
+            			</td>
+            			<td>
+            			2</td>
+            			<td>
+            				Elektromekanik Montaj
+            			</td></tr>
+            		</table>
+            		</div>
+            	<div class="col-xs-12 col-md-6 col-lg-6">
+            		<strong>Eğer ürüne tüketileceği operasyonu tanımlamak istiyorsanız rotasını öncesinde tanımlayınız.</strong><br/>
+            		<strong>Operasyonlar rotanın altındaki operasyon alanındaki gibi yazılmalıdır Örnek:Mekanik Montaj gibi.</strong><br/>  
+            		<strong>Ürün ve miktar zorunlu alanlardır</strong>
+            	</div>
+                <field name="name" nolabel="1" required="1" attrs="{'invisible':[('msg','!=',False)]}"/>
+                <newline/>
+                <field name="msg" colspan="4" nolabel="1" width="650" height="400" style="color:green;"/>
+                <label for="delete_old_values" invisible="1"></label>
+                <field name="delete_old_values" invisible="1"/>
+                </div>
+                <footer>
+                    <button name="import_bom" string="Accept" type="object" class="oe-highlight" attrs="{'invisible':[('msg','!=',False)]}"/>
+                    <button string="Cancel" class="btn-default" special="cancel" attrs="{'invisible':[('msg','!=',False)]}"/>
+                    <button string="Close" class="btn-default" special="cancel" attrs="{'invisible':[('msg','=',False)]}"/>
+                </footer>
+            </form>
+        </field>
+    </record>
+
+    <record id="action_import_bom" model="ir.actions.act_window">
+        <field name="name">Import Bom Lines</field>
+        <field name="res_model">wizard.import.bom</field>
+        <field name="view_mode">form</field>
+        <field name="binding_model_id" ref="mrp.model_mrp_bom"/>
+        <field name="view_id" ref="view_bom_import"/>
+        <field name="target">new</field>
+    </record>
+
+
+</odoo>
