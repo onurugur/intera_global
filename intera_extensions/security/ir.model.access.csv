@@ -1,0 +1,4 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+access_product_group_type,product.group.type,model_product_group_type,,1,1,1,1
+access_product_kumas_type,product.kumas.type,model_product_kumas_type,,1,1,1,1
+access_product_side_type,product.side.type,model_product_side_type,,1,1,1,1
