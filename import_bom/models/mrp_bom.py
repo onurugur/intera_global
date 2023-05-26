@@ -46,7 +46,7 @@ class WizardImportBom(models.TransientModel):
                     product_name = str(sheet.cell(row=rowNum, column=1).value)
                 else:
                     continue
-                product = product_obj.search([('name', '=', product_name)],limit=1)
+                product = product_obj.search([('default_code', '=', product_name)],limit=1)
                 if not product:
                     raise UserError(_('%s is not in products' %(product_name)))
                 if sheet.max_column >= 2:
